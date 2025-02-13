@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our School</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#facilities">Facilities</a></li>
+                <li><a href="#faculties">Faculties</a></li>
+                <li><a href="#signin">Sign In</a></li>
+                <li><a href="#signout">Sign Out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to our school website. Explore our facilities, learn about our faculties, and find out what makes our school unique.</p>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <h3>Our Mission</h3>
+        <p>Our mission is to provide quality education that nurtures the intellectual, social, and emotional development of our students. We are committed to fostering a lifelong love of learning and preparing our students to be responsible and compassionate citizens.</p>
+        <h3>Our History</h3>
+        <p>Founded in [Year], our school has a rich history of academic excellence and community involvement. Over the years, we have grown to become one of the leading educational institutions in the region, offering a wide range of programs and extracurricular activities.</p>
+        <h3>Our Values</h3>
+        <ul>
+            <li><strong>Integrity:</strong> We uphold the highest standards of honesty and ethical behavior.</li>
+            <li><strong>Respect:</strong> We treat everyone with dignity and respect.</li>
+            <li><strong>Excellence:</strong> We strive for excellence in all that we do.</li>
+            <li><strong>Community:</strong> We build a strong and inclusive community where everyone feels valued and supported.</li>
+        </ul>
+        <h3>Contact Us</h3>
+        <p>Address: [School Address]</p>
+        <p>Phone: [School Phone Number]</p>
+        <p>Email: [School Email]</p>
+    </section>
+    <section id="facilities">
+        <h2>Facilities</h2>
+        <p>We offer state-of-the-art facilities including science labs, a library, sports complexes, and more.</p>
+    </section>
+    <section id="faculties">
+        <h2>Faculties</h2>
+        <p>Meet our experienced and dedicated faculty members who are passionate about teaching and mentoring our students.</p>
+    </section>
+    <section id="signin">
+        <h2>Sign In</h2>
+        <form id="signin-form">
+            <input type="text" id="username" name="username" placeholder="Username" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <button type="submit">Sign In</button>
+        </form>
+    </section>
+    <section id="signout">
+        <h2>Sign Out</h2>
+        <button id="signout-button">Sign Out</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

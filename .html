@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our School</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#facilities">Facilities</a></li>
+                <li><a href="#faculties">Faculties</a></li>
+                <li><a href="#signin">Sign In</a></li>
+                <li><a href="#signout">Sign Out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to our school website. Explore our facilities, learn about our faculties, and find out what makes our school unique.</p>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <h3>Our Mission</h3>
+        <p>Our mission is to provide quality education that nurtures the intellectual, social, and emotional development of our students. We are committed to fostering a lifelong love of learning and preparing our students to be responsible and compassionate citizens.</p>
+        <h3>Our History</h3>
+        <p>Founded in [Year], our school has a rich history of academic excellence and community involvement. Over the years, we have grown to become one of the leading educational institutions in the region, offering a wide range of programs and extracurricular activities.</p>
+        <h3>Our Values</h3>
+        <ul>
+            <li><strong>Integrity:</strong> We uphold the highest standards of honesty and ethical behavior.</li>
+            <li><strong>Respect:</strong> We treat everyone with dignity and respect.</li>
+            <li><strong>Excellence:</strong> We strive for excellence in all that we do.</li>
+            <li><strong>Community:</strong> We build a strong and inclusive community where everyone feels valued and supported.</li>
+        </ul>
+        <h3>Contact Us</h3>
+        <p>Address: [School Address]</p>
+        <p>Phone: [School Phone Number]</p>
+        <p>Email: [School Email]</p>
+    </section>
+    <section id="facilities">
+        <h2>Facilities</h2>
+        <h3>Science Laboratories</h3>
+        <p>Our state-of-the-art science labs are equipped with modern equipment and technology to provide students with hands-on learning experiences in biology, chemistry, and physics.</p>
+        <h3>Library</h3>
+        <p>Our library offers a vast collection of books, journals, and digital resources to support students' academic and research needs. It provides a quiet and conducive environment for study and learning.</p>
+        <h3>Sports Complex</h3>
+        <p>Our sports complex includes a gymnasium, swimming pool, and various outdoor sports facilities. It promotes physical fitness and offers students opportunities to participate in a variety of sports activities and competitions.</p>
+        <h3>Art and Music Studios</h3>
+        <p>Our dedicated art and music studios provide students with the resources and space to explore their creative talents. We offer various programs and extracurricular activities to nurture students' artistic and musical skills.</p>
+        <h3>Technology Labs</h3>
+        <p>Our technology labs are equipped with the latest computers and software, providing students with the tools they need to learn and excel in areas such as coding, robotics, and digital design.</p>
+    </section>
+    <section id="faculties">
+        <h2>Faculties</h2>
+        <h3>Meet Our Faculty Members</h3>
+        <p>Our dedicated faculty members are experienced professionals who are passionate about teaching and mentoring our students. They bring a wealth of knowledge and expertise to the classroom, ensuring that our students receive a high-quality education.</p>
+        <h3>Dr. Jane Smith - Principal</h3>
+        <p>Dr. Jane Smith has been the principal of our school for over 10 years. She holds a Ph.D. in Education and has a deep commitment to fostering a positive learning environment for all students.</p>
+        <h3>Mr. John Doe - Science Department Head</h3>
+        <p>Mr. John Doe has over 20 years of experience teaching science. He is passionate about inspiring students to explore the wonders of science and has been recognized for his innovative teaching methods.</p>
+        <h3>Ms. Mary Johnson - Math Teacher</h3>
+        <p>Ms. Mary Johnson has a master's degree in Mathematics and has been teaching at our school for 15 years. She is dedicated to helping students develop a strong foundation in math and critical thinking skills.</p>
+        <h3>Mr. David Brown - History Teacher</h3>
+        <p>Mr. David Brown has a background in history and social studies. He has been with our school for 12 years and is known for his engaging teaching style and ability to make history come alive for his students.</p>
+        <h3>Ms. Emily White - Art Teacher</h3>
+        <p>Ms. Emily White is an accomplished artist with a degree in Fine Arts. She has been teaching art at our school for 8 years and encourages students to express their creativity through various artistic mediums.</p>
+    </section>
+    <section id="signin">
+        <h2>Sign In</h2>
+        <form id="signin-form">
+            <input type="text" id="username" name="username" placeholder="Username" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <button type="submit">Sign In</button>
+        </form>
+    </section>
+    <section id="signout">
+        <h2>Sign Out</h2>
+        <button id="signout-button">Sign Out</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+document.getElementById('signin-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    if (username === 'admin' && password === 'admin') {
+        alert('Sign In Successful!');
+    } else {
+        alert('Invalid Username or Password!');
+    }
+});
+
+document.getElementById('signout-button').addEventListener('click', function() {
+    alert('Signed Out!');
+});
+
